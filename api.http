@@ -1,0 +1,49 @@
+###
+POST  http://localhost:8080/wget
+Content-Type: application/json
+Auth:test0001
+
+{
+    "url":"https://www.gamemaps.com/mirrors/download/18542/6",
+    "name":"hehe4.zip"
+}
+
+
+###
+GET http://localhost:8080/wgetlist
+
+###
+POST  http://localhost:8080/proxy
+Content-Type: application/json
+Auth:myl4d2.tk.auth
+
+{
+    "url":"https://www.gamemaps.com/search/searchlist",
+    "method":"POST",
+    "contentType":"application/x-www-form-urlencoded",
+    "data":{
+        "prefix":"hehe"
+    }
+}
+
+###
+POST  https://www.gamemaps.com/search/searchlist
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+prefix=hehe
+
+
+###
+POST  http://localhost:8080/rcon
+Content-Type: application/json
+Auth:myl4d2.tk.auth
+
+{
+    "url":"myl4d2.tk:27015",
+    "password":"xvchang131",
+    "cmd":"help"
+}
+
+###
+GET  http://localhost:8080/players
+Auth:test0001
